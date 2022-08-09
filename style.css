@@ -1,0 +1,230 @@
+body{
+    font-family: 'Kaushan Script', cursive; 
+    background-image: url(./img/northern-lights-lake-sky-nature.jpg);
+    width: auto;
+}
+
+header{
+    background: #1a18ab;
+    padding: 5px 0;
+    border-radius: 10px;
+
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    font-size: 30px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: linear-gradient( #80d9ff , #180cbe)  ;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.caja img{
+    width: 60px;
+    display: inline-block;
+    margin-top: 1em;
+    color: #d400ff;
+}
+
+.caja p{
+    position: relative;
+    text-align: center;
+    bottom: 50px;
+}
+
+.botones ul{
+    position: relative;
+    text-align: center;
+    margin: 5em;
+}
+
+li{
+    padding: 1em;
+}
+
+.botones button{
+    height: 3em;
+    width: 10em;
+    font-size: large;
+    background: #f4ab2d;
+    color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 1s all;
+    font-family: inherit;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.botones button:hover{
+    background: #46aee7;
+    transform: scale(1.2);
+}
+
+.invisible{
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.crear-palabra{
+    text-align: center;
+    position: relative;
+}
+
+#resultado{
+    color: #d0f907;
+}
+
+.crear-palabra button{
+    height: 3em;
+    width: 10em;
+    font-size: large;
+    background: #e0d283;
+    color: #003049;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    transition: 1s all;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.crear-palabra button:hover{
+    background: #7ef58e;
+    transform: scale(1.2);
+}
+
+#creando-palabra{
+    background: transparent;
+    opacity: 0.5;
+    color: #ffff00f7;
+    border-radius: 10px;
+    resize: none;
+    width: 60%;
+    position: relative;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin: 2em 20%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.juego{
+    position: relative;
+    text-align: center;
+
+}
+
+#resultado{
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.palabra_adivinar{
+    font-size: 50px;
+    color: rgb(51, 255, 15);
+}
+
+.juego canvas{
+    margin: 1em;
+    vertical-align: top;
+}
+
+.juego li{
+    display: inline-block;
+}
+
+.tablero-usadas{
+    position: relative;
+    left: 400px;
+    width: 40%;
+    margin: auto;
+    bottom: 550px;
+}
+
+#titulo-usadas{
+    font-family:  Helvetica, sans-serif;
+    font-size: 30px;
+    color: #fa1414;
+    margin-right: 20px;
+
+}
+
+#letras-usadas{
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    margin-top: 1em;
+    margin-right: 2em;
+}
+
+.botonera-juego{
+    position: relative;
+    right: 450px;
+    bottom: 500px;
+}
+
+.juego button{
+    height: 3em;
+    width: 10em;
+    font-size: large;
+    background: #f8ff2a;
+    color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 1s all;
+    font-family: inherit;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.juego button:hover{
+    background: #e1a9f1;
+    transform: scale(1.2);
+}
+
+
+
+
+@media screen and (max-width:460px){
+
+    .caja{
+        width: auto;
+    }
+
+    .juego canvas{
+        margin: 0;
+        width: 100%;
+    }
+    .palabra_adivinar{
+        font-size: 40px;
+    }
+
+    .tablero-usadas{
+        position: unset;
+        width: auto;
+    }
+
+    .botonera-juego{
+        right: 0;
+        bottom: 0;
+    }
+}
